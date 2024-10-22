@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover - Gameverse</title>
+    <link rel="stylesheet" href="new.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <script src="https://kit.fontawesome.com/eb3facfca4.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;     
+            box-sizing: border-box;
+        }
+        body, html {
+            height: 100%;
+            width: 100%;
+            font-family: 'Playfair Display', serif;
+            color: #ffffff;
+            background-color: #121212; /* Dark background for a professional look */
+            scroll-behavior: smooth; /* Enable smooth scrolling */
+        }
+       
+
+        .hero {
+            height: calc(100vh - 60px);
+            width: 100%;
+            background-image: url('img3.webp');
+            background-size: cover;
+            background-position: top center;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 30px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: #0c0c0c;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+            margin-bottom: 15px;
+            line-height: 1.2;
+        }
+        .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;  /* Start with opacity 0 */
+    animation: slideInLeft 1.5s forwards;  /* Apply animation to the entire content */
+}
+
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);  /* Slide from the left */
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);  /* Slide to the original position */
+    }
+}
+
+.hero p {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.login-btn {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+
+
+
+.hero h2 {
+    animation-delay: 0.3s;
+    font-size: 2.0rem;
+}
+
+.hero p {
+    animation-delay: 0.6s;
+}
+
+
+        /* Additional sections' CSS here */
+    </style>
+</head>
+<body>
+    <nav>
+    <div class="nav-left">
+        <img src="logologo.png" alt="Logo" class="logo" style="margin-top: 20px; width: 125px; height: 85px;">
+        <a href="#hero" class="nav-item">Home</a>
+    </div>
+    
+    <div class="nav-right">
+        <a href="#how-it-works" class="nav-item">About Us</a>
+        <a href="#features" class="nav-item">Features</a>
+        
+    </div>
+</nav>
+
+    <div id="hero" class="hero">
+        <div class="hero-content">
+            <h1>Discover the Future of Gaming</h1>
+            <h2>Experience Endless Possibilities</h2>
+            <p>Join us in the ultimate gaming platform where you can explore, create, and conquer new worlds. Step into the future with GameVerse.</p>
+            <button class="login-btn">Login</button>
+        </div>
+    </div>
+    
+    <section class="video-content-section">
+        <div class="container">
+            <div class="content-wrapper">
+                <!-- Left Side: Animated Video -->
+                <div class="video-container">
+                    <video autoplay loop muted>
+                        <source src="Untitled (1).mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+    
+                <!-- Right Side: Content -->
+                <div class="content-container">
+                    <h1>WHO WE ARE</h1>
+                    <h2>Interactive Gaming Experience</h2>
+                    <p>Immerse yourself in the most dynamic and interactive gaming experiences. Discover new games, compete in tournaments, and enjoy a world of endless entertainment.</p>
+                    <a href="#" class="discover-button">Discover More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+        <h2>How It Works</h2>
+        <div class="carousel-container">
+            <div class="carousel-item active">
+                <div class="carousel-text">
+                    <h3>Create Your Profile</h3>
+                    <p>Sign up and create your personalized gaming profile.</p>
+                </div>
+                <img src="profile(2).jpeg" alt="Step 1">
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-text">
+                    <h3>Explore Games</h3>
+                    <p>Browse through a variety of games and find your favorite ones.</p>
+                </div>
+                <img src="games3.jpeg" alt="Step 2">
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-text">
+                    <h3>Keep Track of your games</h3>
+                    <p>Participate in competitive tournaments and keep track of your games.</p>
+                </div>
+                <img src="traack.jpeg" alt="Step 3">
+            </div>
+        </div>
+    </section>
+    
+                
+           
+   
+    
+
+<section class="testimonials">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonial-cards">
+        <button class="prev-btn">&#10094;</button> <!-- Previous button -->
+        <div class="testimonial">
+            <p>"Gameverse has completely transformed my gaming experience! The variety of tournaments keeps me engaged, and the community is incredibly supportive. I've made new friends and even participated in a few friendly competitions. The platform is intuitive, and I love the seamless integration of cross-platform play."</p>
+            <h4>John Doe</h4>
+        </div>
+        <div class="testimonial">
+            <p>"I've been using Gameverse for several months, and it's been a blast. The range of games is impressive, and I appreciate the customizable avatars. The real-time stats feature helps me track my progress and improve my skills. Plus, the user interface is sleek and easy to navigate."</p>
+            <h4>Jane Smith</h4>
+        </div>
+        <div class="testimonial">
+            <p>"As a long-time gamer, I'm always looking for new platforms that offer a great experience. Gameverse stands out with its user-friendly design and extensive game library. The ability to join tournaments and compete with others adds a new level of excitement. I also appreciate the regular updates and new features."</p>
+            <h4>Alex Johnson</h4>
+        </div>
+        <div class="testimonial">
+            <p>"Gameverse is a fantastic platform for gamers. I love the variety of games and the community aspect. It's easy to find tournaments and engage with other players."</p>
+            <h4>Emily Davis</h4>
+        </div>
+        <div class="testimonial">
+            <p>"I've had a great experience with Gameverse. The interface is user-friendly, and the features are top-notch. Highly recommend to any gamer!"</p>
+            <h4>Michael Brown</h4>
+        </div>
+        <div class="testimonial">
+            <p>"What I love most about Gameverse is the accessibility and the diverse game selection. It's become my go-to platform!"</p>
+            <h4>Susan Lee</h4>
+        </div>
+        <button class="next-btn">&#10095;</button> <!-- Next button -->
+    </div>
+</section>
+
+
+
+<!-- Features Section -->
+ 
+
+<section class="features">
+    
+    <div class="feature-content">
+        <h2>Our Features</h2>
+        <div class="feature-list">
+            <div class="feature-item tilted-img"> 
+                <img src="buy.webp" alt="Feature 1" >
+                <h3>Buy Games</h3>
+            <p>Browse and purchase your favorite games directly from our platform.</p>
+            </div>
+            <div class="feature-item tilted-img">
+                <img src="games3.jpeg" alt="Feature 2">
+                <h3>Multiple Games</h3>
+            <p>Access a wide variety of games across different genres and platforms.</p>
+            </div>
+            <div class="feature-item tilted-img">
+                <img src="kids.webp" alt="Feature 3">
+                <h3>Kids Zone</h3>
+            <p>Participate in exciting tournaments and showcase your skills.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- More Games Section -->
+    <section class="game-slider">
+        <div class="slider-container">
+            <div class="slider-track">
+                <div class="slide">
+                    <img src="new1.jpeg" alt="Game 1" >
+                    <p>MECH WARRIORS</p>
+                </div>
+                <div class="slide">
+                    <img src="new2.jpeg" alt="Game 2" >
+                    <p>POTION TYCOON</p>
+                </div>
+                <div class="slide">
+                    <img src="game10.jpeg" alt="Game 3" >
+                    <p>TOUR OF INFERNO</p>
+                </div>
+                <div class="slide">
+                    <img src="game9.jpeg" alt="Game 4" >
+                    <p>CROSSHAIR V2</p>
+                </div>
+                <div class="slide">
+                    <img src="game5.jpeg" alt="Game 5" >
+                    <p>RED DEAD II</p>
+                </div>
+                <div class="slide">
+                    <img src="game6.jpeg" alt="Game 6" >
+                    <p>CROSSHAIR X</p>
+                </div>
+                <div class="slide">
+                    <img src="game7.jpeg" alt="Game 7" >
+                    <p>BALOONS TD6</p>
+                </div>
+                <div class="slide">
+                    <img src="game8.jpeg" alt="Game 8">
+                    <p>Bear & Breakfast</p>
+                </div>
+                <div class="slide">
+                    <img src="new3.jpeg" alt="Game 9">
+                    <p>GOD OF WAR</p>
+                </div>
+                <div class="slide">
+                    <img src="game11.jpeg" alt="Game 10">
+                    <p>STARTAIL</p>
+                </div>
+                <div class="slide">
+                    <img src="game12.jpeg" alt="Game 11">
+                    <p>VALORANT</p>
+                </div>
+                <!-- Add more slides as needed -->
+            </div>
+        </div>
+    </section>
+    
+<div id="gameModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <img id="modalImage" src="" alt="Game Image">
+        <p id="modalText"></p>
+    </div>
+</div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Gameverse. All rights reserved.</p>
+        <div class="social-media">
+            <!-- <a href="#"><img src="images/facebook.png" alt="Facebook"></a> -->
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-pinterest"></i>
+        </div>
+    </footer>
+    <script src="final.js"></script>
+
+
+    
+</body>
+</html>
