@@ -1,5 +1,5 @@
 # FEE-II
-![logologo](https://github.com/user-attachments/assets/adbe3562-19d7-4f81-a033-974b19bd847e)
+<img src="https://github.com/user-attachments/assets/adbe3562-19d7-4f81-a033-974b19bd847e" alt="logologo" width="200"/>
 
 GameVerse
 This repository contains the source code for GameVerse, a gaming website. The website serves as a library for games, allowing users to browse and explore various games with detailed information.
