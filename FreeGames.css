@@ -382,7 +382,7 @@ nav {
   background-position: center;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-start;
   background-repeat: no-repeat;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -395,7 +395,7 @@ nav {
 }
 
 .game-status {
-  margin-top: 60000000px;
+  margin-top: 180px;
   font-size: 14px;
   font-weight: bold;
   background-color: #00aaff; /* Light blue for "FREE NOW" */
@@ -649,97 +649,78 @@ opacity: 1;
 
 
 hr{
-  margin-top: 220px;
+  margin-top: 40px;
   opacity: 0.5;
 }
-footer {
-  width: 100%;
-  height: auto;
-  background-color:transparent;/* Dark background color */
-  padding: 20px;
-  color: #b0b0b0; /* Light grey text color */
+.footer {
+  background-color: rgba(3, 3, 3, 0.82);
+  color: #fff;
+  padding: 40px 20px;
   font-family: Arial, sans-serif;
-  font-size: 14px;
-  box-sizing: border-box;
-  margin-top: 5px;
-  margin-bottom:auto;
-  text-align: center; /* Center footer content */
 }
-.p_footer{
 
-  font-size: 1em;
+/* Footer Top Section - Social Icons */
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
 }
-  
-  .footer-top {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .footer-top, .footer-bottom {
-    max-width: 100%; /* Set a max width for the content within the footer */
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-  
-  .logo {
-    max-width: 100px;
-    margin-bottom: 10px;
-  }
-  
-  .footer-links {
-    margin-top: 10px;
-  }
-  
-  .footer-links a {
-    color: #b0b0b0;
-    text-decoration: none;
-    margin: 0 5px;
-  }
-  
-  .footer-links a:hover {
-    color: white; /* Change color on hover */
-  }
-  
-  .footer-bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-top: 1px solid #444; 
-    padding-top: 20px;
-    flex-wrap: wrap; 
-  }
-  
-  .footer-nav {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  
-  .footer-nav a {
-    color: #b0b0b0;
-    text-decoration: none;
-    margin: 0 5px;
-  }
-  
-  .footer-nav a:hover {
-    color: white;
-  }
-  
-  .social-media {
-    display: flex;
-    justify-content: center;
-    gap: 17px;
-  }
-  
-  .social-media a img {
-    width: 35px; 
-    height: auto;
-  }
-  
-  .social-media a:hover img {
-    opacity: 0.8;
-  }
-  
+
+.social-icons a {
+  display: inline-block;
+  width: 40px;  /* Set equal width */
+  height: 40px; /* Set equal height */
+  margin: 0 10px;
+}
+
+.social-icons a img {
+  width: 100%;  /* Fit image within the container */
+  height: 100%; /* Maintain aspect ratio inside container */
+  object-fit: contain;
+  transition: transform 0.2s ease-in-out;
+}
+
+.social-icons a img:hover {
+  transform: scale(1.2);
+}
+
+/* Footer Bottom Section - Text, Policies, and Logos */
+.footer-bottom {
+  border-top: 1px solid #444;
+  padding-top: 20px;
+  text-align: left;
+}
+
+/* Policies Links */
+.footer-policies {
+  margin: 20px 0;
+}
+
+.footer-policies a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-policies a:hover {
+  text-decoration: underline;
+}
+
+/* Logos Section */
+.footer-logos {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.footer-logos img {
+  width: 50px;
+  height: auto;
+  margin-top: 10px;
+}
+
+.footer-logos_ img {
+  width: 80px;
+  height: auto;
+  margin-top: 0px;
+}
