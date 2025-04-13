@@ -18,75 +18,10 @@
             background-color: #fcfbfb; /* Light cream color */
             line-height: 1.6;
         }
-
-        /* Navbar styles */
-        nav {
-            background: #ffffff;
-            backdrop-filter: blur(10px);
-            padding: 1rem 5%;
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .nav-left {
-            display: flex;
-            align-items: center;
-            gap: 2rem;
-        }
-
-        .logo {
-            width: 60px;
-            height: 54px;
-            object-fit: contain;
-        }
-
-        .nav-item {
-            color: #333333;
-            text-decoration: none;
-            font-size: 1.1rem;
-            font-weight: 500;
-            padding: 0.5rem 1rem;
-            border-radius: 6px;
-            transition: all 0.3s ease;
-        }
-
-        .nav-item:hover {
-            color: #5a8d8c;
-            background: rgba(90, 141, 140, 0.1);
-        }
-
-        .nav-right {
-            display: flex;
-            align-items: center;
-            gap: 1.5rem;
-        }
-
-        .nav-right button {
-            background-color: #5a8d8c;
-            color: #ffffff;
-            border: none;
-            padding: 0.7rem 1.5rem;
-            border-radius: 8px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .nav-right button:hover {
-            background-color: #487473;
-            transform: translateY(-2px);
-        }
-
-        /* Main content styles */
+        
         .about-section {
             max-width: 1200px;
-            margin: 120px auto 60px;
+            margin: 50px auto 60px;
             padding: 0 2rem;
         }
 
@@ -157,14 +92,12 @@
         }
 
         .footer {
-            background-color: #ffffff;
-            color: #333333;
+            background-color: transparent;
+            color: #000000;
             padding: 40px 20px;
             font-family: Arial, sans-serif;
-            border-top: 1px solid #cccccc;
         }
 
-        /* Footer Top Section - Social Icons */
         .footer-top {
             display: flex;
             justify-content: space-between;
@@ -175,14 +108,14 @@
 
         .social-icons a {
             display: inline-block;
-            width: 40px;
-            height: 40px;
+            width: 40px; 
+            height: 40px; 
             margin: 0 10px;
         }
 
         .social-icons a img {
             width: 100%;
-            height: 100%;
+            height: 100%; 
             object-fit: contain;
             transition: transform 0.2s ease-in-out;
         }
@@ -191,9 +124,8 @@
             transform: scale(1.2);
         }
 
-        /* Footer Bottom Section - Text, Policies, and Logos */
         .footer-bottom {
-            border-top: 1px solid #cccccc;
+            border-top: 1px solid #000000;
             padding-top: 20px;
             text-align: left;
         }
@@ -203,12 +135,17 @@
         }
 
         .footer-policies a {
-            color: #333333;
+            color: #000000;
             text-decoration: none;
         }
 
         .footer-policies a:hover {
             text-decoration: underline;
+        }
+
+        .footer-logos {
+            margin-top: 20px;
+            text-align: left;
         }
 
         .footer-logos img {
@@ -223,7 +160,6 @@
             margin-top: 0px;
         }
 
-        /* Mobile Responsive Design */
         @media (max-width: 600px) {
             .footer-top, .footer-bottom {
                 text-align: center;
@@ -238,28 +174,9 @@
             }
         }
   
- 
-  
-  
-  
     </style>
 </head>
 <body>
-    <nav>
-        <div class="nav-left">
-            <img src="logologo.png" alt="GAMEVERSE Logo" class="logo">
-            <!-- Links to sections in the original page -->
-            <a href="aboutus.html#whoweare" class="nav-item">Who We Are</a>
-            <a href="aboutus.html#feat" class="nav-item">Our Features</a>
-            <a href="aboutus.html#hiring" class="nav-item">Work With Us</a>
-        </div>
-        <div class="nav-right">
-            <a href="login.html"><button>Sign In</button></a>
-            <a href="profile.html" class="nav-item">
-                <i class="fas fa-user"></i>
-            </a>
-        </div>
-    </nav>
 
     <section class="about-section">
         <h1>About GAMEVERSE</h1>
@@ -278,47 +195,49 @@
                 Tel +91 12345 67890
             </p>
         </div>
-
-        <h2>Join Our Team</h2>
-        <p>We're hiring! Visit the <a href="aboutus.html#hiring">GAMEVERSE Careers</a> portal to explore exciting opportunities with us.</p>
-
         
     </section>
    
-    
         <footer class="footer">
             <div class="footer-top">
                 <div class="social-icons">
-                    <a href="#" aria-label="Instagram">
+                    <a href="https://www.instagram.com" aria-label="Instagram">
                         <img src="https://static.vecteezy.com/system/resources/previews/018/930/413/original/instagram-logo-instagram-icon-transparent-free-png.png" 
                         alt="Instagram Logo">
                     </a>
-                    <a href="#" aria-label="Twitter">
+                    <a href="https://www.facebook.com" aria-label="Twitter">
                         <img src="https://www.teahub.io/photos/full/11-115962_facebook-logo-png-transparent-background-facebook-png.png" 
                         alt="Twitter Logo" >
                     </a>
-                    <a href="#" aria-label="YouTube">
+                    <a href="https://www.youtube.com" aria-label="YouTube">
                         <img src="https://static.vecteezy.com/system/resources/previews/018/930/575/original/youtube-logo-youtube-icon-transparent-free-png.png" 
                         alt="YouTube Logo">
                     </a>
                 </div>
             </div>
-        
+    
             <div class="footer-bottom">
-                <div>
-                    <p>© 2024, GameVerse, Inc. All rights reserved...</p>
-                </div>
+                <section>
+                    <p>© 2024, GameVerse, Inc. All rights reserved. Epic, Gameverse Games, the Gameverse logo, Fortnite, 
+                    the Fortnite logo, Unreal, Unreal Engine, the Unreal Engine logo, Unreal Tournament, and the Unreal Tournament 
+                    logo are trademarks or registered trademarks of Epic Games, Inc. in the United States of America and elsewhere. 
+                    Other brands or product names are the trademarks of their respective owners.</p>
+    
+                    <p>Our websites may contain links to other sites and resources provided by third parties. These links are provided 
+                    for your convenience only. Epic Games has no control over the contents of those sites or resources, and accepts no 
+                    responsibility for them or for any loss or damage that may arise from your use of them.</p>
+                </section>
+    
                 <div class="footer-policies">
                     <a href="#">Terms of Service</a> | 
                     <a href="#">Privacy Policy</a> | 
                     <a href="#">Store Refund Policy</a>
                 </div>
+    
                 <div class="footer-logos_">
                     <img src="logologo.png" alt="GameVerse Logo" width="50">
                 </div>
             </div>
         </footer>
-        
-    
 </body>
 </html>
