@@ -1,7 +1,4 @@
 
-html {
-    background-color: black;
-  }
   
   body {
     background-image: url("love1.webp");
@@ -17,6 +14,7 @@ html {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    overflow-x: hidden;
   }
   
   nav {
