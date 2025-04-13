@@ -120,8 +120,16 @@
     height: 5px;
     width: 5px;
     top: -20px;
-    animation: leftright 24s infinite cubic-bezier(0.39, 0, 0.63, 1), updown 8s infinite 1.25s cubic-bezier(0.39, 0, 0.63, 1), blinking 3s infinite;
-  }
+    animation: 
+  leftright 8s 1 cubic-bezier(0.39, 0, 0.63, 1), 
+  leftright 24s infinite 8s cubic-bezier(0.39, 0, 0.63, 1), 
+  updown 2.5s 2 0.3s cubic-bezier(0.39, 0, 0.63, 1), 
+  updown 8s infinite 5s cubic-bezier(0.39, 0, 0.63, 1), 
+  blinking 1s 5, 
+  blinking 3s infinite 5s;
+transform: translateY(20px); /* Move fireflies a bit lower */
+
+    }
   
   #h1 {
     font-size: 55px;
