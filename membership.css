@@ -38,15 +38,7 @@ body {
     display: flex;
     justify-content: space-between; 
     align-items: center;
-  }
-  
-  .plans h2 {
-    text-align: left; 
-    flex: 1; 
-    margin-left: 170px;
-    font-size:xx-large;
-    margin-top: 0;
-    margin-bottom: 120px;
+    background-color: #121212;
   }
   
   .plan-cards {
@@ -54,6 +46,7 @@ body {
     justify-content: flex-start; 
     gap: 40px;
     flex-wrap: wrap;
+    justify-content: center;
     flex: 2;
   }
   
