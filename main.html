@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gaming Website</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Add Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="stylesheet" href="main.css">
 </head>
 <body>
@@ -13,7 +13,6 @@
         <img src="logologo.png" alt="Logo" id="explore-button" class="logo" style="margin-top: 25px; width: 90px; height: 80px;">
         <a href="#" class="nav-item">Home</a>
         <a href="aboutus.html" class="nav-item">AboutUs</a>
-        <!-- <a href="help.html" class="nav-item">Support</a> -->
     </div>
     <div class="nav-middle">
         <input type="text" placeholder="Search" class="search-bar" id="searchInput" onkeyup="searchGames()" >
@@ -488,7 +487,7 @@ function searchGames() {
     let foundMatch = false;
 
     gameItems.forEach(item => {
-        const gameText = item.innerText.toLowerCase(); // Get the full text of the card
+        const gameText = item.innerText.toLowerCase();
         if (gameText.includes(input)) {
             item.style.display = '';
             foundMatch = true;
@@ -498,13 +497,11 @@ function searchGames() {
     });
 
     if (input) {
-        // Hide section containers that have no visible game-item inside
         otherSections.forEach(section => {
             const visibleGames = section.querySelectorAll('.game-items:not([style*="display: none"])');
             section.style.display = visibleGames.length > 0 ? '' : 'none';
         });
     } else {
-        // Show all sections and all items if search is cleared
         otherSections.forEach(section => section.style.display = '');
         gameItems.forEach(item => item.style.display = '');
     }
